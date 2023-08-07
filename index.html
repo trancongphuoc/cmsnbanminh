@@ -11,21 +11,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card" id="card">
             <div class="outside">
-                <!-- <img src="cakegif.gif"/>
+                <img src="cakegif.gif"/>
                 <h3>Sinh nhật vui vẻ, tuổi mới mau ăn chóng lớn, sống lâu trăm tuổi  :)))
-                </h3> -->
+                </h3>
             </div>
             <div class="inside">
-                <!-- <h1>Happy Birthday</h1>
-                <h3>Sinh nhật vui vẻ, tuổi mới mau ăn chóng lớn, sống lâu trăm tuổi  :)))</h3> -->
-                <!-- <img src="art.jpg"/> -->
+                <img src="art.jpg"/>
             </div>
             
         </div>
 
-        <!-- <div class="block">
+        <div class="block">
             <div class="frames frame1">
                 <img src="4.jpg" alt="">
                 <p>Chúc bạn luôn lạc quan và vui vẻ trong cuộc sống.</p>
@@ -37,14 +35,27 @@
             </div>
             <div class="frames frame3">
                 <img src="3.jpg" alt="">
-                <p>Chúc bạn thực hiện được những điều mà bạn mong muốn.</p>
+                <p>Chúc bạn thực hiện được những điều mà bản thân mong muốn.</p>
             </div>
             <div class="frames frame4">
                 <img src="5.jpg" alt="">
                 <p>Chúc mọi điều tốt đẹp nhất sẽ đến với bạn.</p>
             </div>
-        </div> -->
+        </div>
 
     </div>
 </body>
+
+<script>
+    var flag = true;
+    setInterval(function() {
+        if(flag) {
+            document.getElementById("card").style.transform = "rotateY(180deg)";
+        } else {
+            document.getElementById("card").style.transform = "rotateY(0deg)";
+        }
+
+        flag = !flag;
+    }, 5000);
+</script>
 </html>
